@@ -1,0 +1,73 @@
+
+
+
+push 10 ;r
+pop rax ; rax <- radius
+push rax
+push 2
+mul
+pop rdx ; rdx <- diametr
+        ; rbx <- x, rcx <- y
+push 0
+dup
+pop rbx
+pop rcx
+:y_cycle
+push 0
+pop rbx
+push rdx
+push rcx
+jbe :end
+:x_cycle
+push rdx
+push rbx
+jbe :next
+push rbx
+dup
+mul
+push rcx
+dup
+mul
+add
+push rdx
+push 2
+sub
+dup
+mul
+sub
+dup
+push -15
+jb :do_nothing
+push 15
+ja :do_nothing
+;jne :do_nothing
+push rbx
+push rcx
+push rdx
+mul
+add
+;dup
+;out
+pop rax
+push 10
+pop [rax]
+:do_nothing
+push rbx
+push 1
+add
+pop rbx
+;push rbx
+;out
+jmp :x_cycle
+:next
+push rcx
+push 1
+add
+pop rcx
+jmp :y_cycle
+:end
+push rdx
+graph
+hlt
+
+

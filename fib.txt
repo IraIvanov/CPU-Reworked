@@ -1,0 +1,23 @@
+
+IN
+pop rax
+push rax
+pop rbx
+CALL :fib    
+out
+hlt
+
+
+
+:fib
+push rax
+push 2
+jbe :end
+push rax
+call :fib
+
+
+
+:end
+push 1
+ret 
