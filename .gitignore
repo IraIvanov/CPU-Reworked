@@ -1,0 +1,14 @@
+cpu_lib.cpp
+cpu_lib.hpp
+a.txt
+a.out
+compiler.o
+defines.txt
+io.o
+log
+log.txt
+proc.o
+round.txt
+square.txt
+stack.o
+fib.txt
