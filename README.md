@@ -8,8 +8,8 @@ The program is created as my student project
 # How to build
 
 ```terminal
-  $ git clone https://github.com/IraIvanov/Project_H    
-  $ cd Project_H/Processor    
+  $ https://github.com/IraIvanov/CPU-Reworked   
+  $ cd CPU-Reworked
   $ make        
   ```
 After building project you'll receive 2 executable files, compiler and proc.
