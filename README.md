@@ -1,7 +1,5 @@
 # That directory contains the program that emulates cpu called proc 
 
-**That is the most briliant code for that type of problem that human been could ever seen**
-
 The program is created as my student project
 
 
