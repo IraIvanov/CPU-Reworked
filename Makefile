@@ -7,3 +7,5 @@ compiler: cmd.o io.o compiler.o stack.o
 		$(CC) $(CFLAGS) -o compiler cmd.o compiler.o io.o stack.o
 proc: cmd.o proc.o io.o stack.o
 	$(CC) $(CFLAGS) -o proc cmd.o proc.o io.o stack.o
+clean:
+	rm *.o
